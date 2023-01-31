@@ -32,7 +32,7 @@ export class App extends Component {
         contact.id !== id),
     }));
 
-  handleFilterChange = (filter) => this.setState({ filter });
+  handleFilterChange = (event) => this.setState({ filter: event.target.value });
 
   getVisibleContacts = () => {
     const { contacts, filter } = this.state;
